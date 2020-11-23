@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_news_app/views/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,8 +10,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'News App',
       theme: ThemeData(
-        primaryColor: Colors.lightBlueAccent,
+        primaryColor: Colors.white,
       ),
+      home: HomePage(),
     );
   }
 }
