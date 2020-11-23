@@ -11,7 +11,7 @@ class NewsCategoryTile extends StatelessWidget {
         log("category tab tapped");
       },
       child: Container(
-        margin: EdgeInsets.only(right: 10.0),
+        margin: EdgeInsets.only(right: 12.0),
         child: Stack(
           children: [
             ClipRRect(

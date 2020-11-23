@@ -5,6 +5,7 @@ import 'package:flutter_news_app/helper/data.dart' as Data;
 import 'package:flutter_news_app/Model/categoryModel.dart';
 import 'package:flutter_news_app/widgets/AppBar.dart';
 import 'package:flutter_news_app/widgets/HorizontalListForCategory.dart';
+import 'package:flutter_news_app/widgets/VerticalListForNews.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -29,6 +30,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             HorizontalListForCategory(allCategories: allCategories),
+            // VerticalListForNews(),
           ],
         ),
       ),
