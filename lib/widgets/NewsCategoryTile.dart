@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import '../views/category.dart';
 
 class NewsCategoryTile extends StatelessWidget {
   final String imageUrl, categoryName;
@@ -8,7 +9,14 @@ class NewsCategoryTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        log("category tab tapped");
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (coontext) => CategoryNewsView(
+              categoryName: categoryName.toLowerCase(),
+            ),
+          ),
+        );
       },
       child: Container(
         margin: EdgeInsets.only(right: 12.0),
